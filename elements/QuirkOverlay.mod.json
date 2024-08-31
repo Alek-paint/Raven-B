@@ -1,0 +1,396 @@
+{
+  "_fv": 66,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "quirk_exp_bar.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 3,
+          "y": 3
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_11",
+          "text": {
+            "fixedValue": "11"
+          },
+          "color": {
+            "value": -13382656,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 185,
+          "y": 2
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar.png",
+          "use1Xscale": false,
+          "anchorPoint": "CENTER",
+          "x": 220,
+          "y": 114
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown1"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 125
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown2"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 124
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown3"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 123
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown4"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 122
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown5"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 121
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown6"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 120
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown7"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 119
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown8"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 118
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown9"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown10"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 116
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energy_bar_progression.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown10"
+          },
+          "anchorPoint": "CENTER",
+          "x": 221,
+          "y": 115
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "unable_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "QuirkCooldown0"
+          },
+          "anchorPoint": "CENTER",
+          "x": 218,
+          "y": 117
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quirk_power_percentage_barr.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 3,
+          "y": 13
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_100",
+          "text": {
+            "fixedValue": "100"
+          },
+          "color": {
+            "value": -13369600,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 186,
+          "y": 12
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty",
+          "text": {
+            "fixedValue": "%"
+          },
+          "color": {
+            "value": -13369600,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 204,
+          "y": 12
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quirk_display_background.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 3,
+          "y": 18
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "invisibility_quirk_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InvisibilityOverlayDisplay"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 10,
+          "y": 25
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quirk_power_display_background.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 31,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quirk_power_display_background.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 56,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quirk_power_display_background.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 81,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quirk_power_display_background.png",
+          "use1Xscale": false,
+          "anchorPoint": "TOP_LEFT",
+          "x": 106,
+          "y": 16
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selection_quirk_power_display.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplaySelectedAttackSlot1"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 36,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selection_quirk_power_display.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplaySelectedAttackSlot2"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 61,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selection_quirk_power_display.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplaySelectedAttackSlot3"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 86,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "selection_quirk_power_display.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplaySelectedAttackSlot4"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 111,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blindness_attack.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InvisibilityOverlayDisplay"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 39,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "invisible_entity_attack.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InvisibilityOverlayDisplay"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 64,
+          "y": 24
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "DisplayQuirkGui"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

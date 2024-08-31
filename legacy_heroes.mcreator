@@ -1,0 +1,774 @@
+{
+  "mod_elements": [
+    {
+      "name": "Quirks",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/command/QuirksCommand.java"
+        ]
+      },
+      "path": "~/Commands"
+    },
+    {
+      "name": "InvisibilityOverlayDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisibility_overlay_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/InvisibilityOverlayDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Invisibility"
+    },
+    {
+      "name": "AddInvisibilityQuirk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_invisibility_quirk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/AddInvisibilityQuirkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "QuirkOverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/client/screens/QuirkOverlayOverlay.java"
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay"
+    },
+    {
+      "name": "RemoveQuirk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_quirk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/RemoveQuirkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
+    },
+    {
+      "name": "DisplayQuirkGui",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_quirk_gui",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/DisplayQuirkGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay"
+    },
+    {
+      "name": "UseQuirkPower",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_quirk_power",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/network/UseQuirkPowerMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "CycleAttacksLeft",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cycle_attacks_left",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/network/CycleAttacksLeftMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "CycleAttacksRight",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cycle_attacks_right",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/network/CycleAttacksRightMessage.java"
+        ]
+      },
+      "path": "~/Keybinds"
+    },
+    {
+      "name": "QuirkCooldown0",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_0",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "QuirkCooldown1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "QuirkCooldown2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "QuirkCooldown3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "QuirkCooldown4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "QuirkCooldown5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "QuirkCooldown6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_6",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "QuirkCooldown7",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_7",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown7Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "QuirkCooldown8",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_8",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown8Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "QuirkCooldown9",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_9",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown9Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "QuirkCooldown10",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_10",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldown10Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown/Display"
+    },
+    {
+      "name": "Herocostumesuitcase",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herocostumesuitcase",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/legacy_heroes/models/item/herocostumesuitcase_0.json",
+          "src/main/resources/assets/legacy_heroes/models/item/herocostumesuitcase_5.json",
+          "src/main/java/net/maketendo/legacyheroes/item/HerocostumesuitcaseItem.java",
+          "src/main/resources/assets/legacy_heroes/models/item/herocostumesuitcase_2.json",
+          "src/main/resources/assets/legacy_heroes/models/item/herocostumesuitcase.json",
+          "src/main/resources/assets/legacy_heroes/models/item/herocostumesuitcase_4.json",
+          "src/main/resources/assets/legacy_heroes/models/item/herocostumesuitcase_1.json",
+          "src/main/java/net/maketendo/legacyheroes/item/inventory/HerocostumesuitcaseInventoryCapability.java",
+          "src/main/resources/assets/legacy_heroes/models/item/herocostumesuitcase_3.json"
+        ]
+      },
+      "path": "~/Items/Hero Costume Suitcase"
+    },
+    {
+      "name": "LegacyHeroes",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "legacy_heroes",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "HerocostumesuitcasePropertyValueProvider",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "herocostumesuitcase_property_value_provider",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/HerocostumesuitcasePropertyValueProviderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Hero Costume Suitcase"
+    },
+    {
+      "name": "SetPlayerIDUponJoining",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_player_id_upon_joining",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/SetPlayerIDUponJoiningProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PlayerGUIRenderer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_gui_renderer",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/PlayerGUIRendererProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Items/Hero Costume Suitcase/Gui"
+    },
+    {
+      "name": "HeroCostumeSuitcaseGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hero_costume_suitcase_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/client/gui/HeroCostumeSuitcaseGUIScreen.java",
+          "src/main/java/net/maketendo/legacyheroes/world/inventory/HeroCostumeSuitcaseGUIMenu.java"
+        ]
+      },
+      "path": "~/Items/Hero Costume Suitcase/Gui"
+    },
+    {
+      "name": "CycleAttacksLeftOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cycle_attacks_left_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/CycleAttacksLeftOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+    },
+    {
+      "name": "CycleAttacksRightOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cycle_attacks_right_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/CycleAttacksRightOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+    },
+    {
+      "name": "DisplaySelectedAttackSlot1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_selected_attack_slot_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/DisplaySelectedAttackSlot1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+    },
+    {
+      "name": "DisplaySelectedAttackSlot2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_selected_attack_slot_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/DisplaySelectedAttackSlot2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+    },
+    {
+      "name": "DisplaySelectedAttackSlot3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_selected_attack_slot_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/DisplaySelectedAttackSlot3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+    },
+    {
+      "name": "DisplaySelectedAttackSlot4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_selected_attack_slot_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/DisplaySelectedAttackSlot4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+    },
+    {
+      "name": "DisplaySelectedAttackSlot5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_selected_attack_slot_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/DisplaySelectedAttackSlot5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+    },
+    {
+      "name": "LoopSelectedRotor",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loop_selected_rotor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/LoopSelectedRotorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "quirk",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"quirkless\""
+    },
+    {
+      "name": "quirk_exp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "quirk_power_percentage",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "quirk_cooldown",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "quirk_attack_selection_rotor",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "quirk_attack_selected",
+      "type": "string",
+      "scope": "map",
+      "value": "\"\""
+    },
+    {
+      "name": "Player_ID",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "gui.legacy_heroes.quirk_overlay.label_100": "100",
+      "key.categories.quirks": "Quirks",
+      "gui.legacy_heroes.quirk_overlay.label_11": "11",
+      "key.legacy_heroes.cycle_attacks_left": "Attack Cycle Left",
+      "item.legacy_heroes.herocostumesuitcase": "Hero Costume Suitcase",
+      "item_group.legacy_heroes.legacy_heroes": "Legacy Heroes",
+      "key.legacy_heroes.use_quirk_power": "Use Selected Quirk Attack",
+      "gui.legacy_heroes.quirk_overlay.label_empty": "%",
+      "key.legacy_heroes.cycle_attacks_right": "Attack Cycle Right"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Quirks",
+        "children": [
+          {
+            "name": "Invisibility",
+            "children": []
+          },
+          {
+            "name": "Quirk Overlay",
+            "children": [
+              {
+                "name": "Quirk Cooldown",
+                "children": [
+                  {
+                    "name": "Display",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "QuirkSelection",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Commands",
+        "children": [
+          {
+            "name": "Procedures",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Keybinds",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": [
+          {
+            "name": "Hero Costume Suitcase",
+            "children": [
+              {
+                "name": "Gui",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "legacy_heroes",
+    "modName": "Legacy Heroes",
+    "version": "0.0.1",
+    "description": "WIP",
+    "author": "Maketendo",
+    "websiteURL": "test",
+    "license": "MIT License",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "test",
+    "modElementsPackage": "net.maketendo.legacyheroes"
+  },
+  "mcreatorVersion": 202400232117
+}

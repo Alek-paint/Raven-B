@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT License"
+
+[[mods]]
+modId="legacy_heroes"
+version="0.0.1"
+displayName="Legacy Heroes"
+displayURL="https://mcreator.net"
+credits="test"
+authors="Maketendo"
+description="WIP"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.legacy_heroes]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+[[dependencies.legacy_heroes]]
+    modId="kleidersplayerrenderer"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

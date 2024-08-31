@@ -1,0 +1,45 @@
+{
+  "parent": "legacy_heroes:custom/hero_costume_suitcase",
+  "textures": {
+    "0": "legacy_heroes:block/hero_costume_suitcase",
+    "particle": "legacy_heroes:item/hero_costume_suitcase"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "legacy_heroes:herocostumesuitcase_rendersuitcasenumber": 0
+      },
+      "model": "legacy_heroes:item/herocostumesuitcase_0"
+    },
+    {
+      "predicate": {
+        "legacy_heroes:herocostumesuitcase_rendersuitcasenumber": 1
+      },
+      "model": "legacy_heroes:item/herocostumesuitcase_1"
+    },
+    {
+      "predicate": {
+        "legacy_heroes:herocostumesuitcase_rendersuitcasenumber": 2
+      },
+      "model": "legacy_heroes:item/herocostumesuitcase_2"
+    },
+    {
+      "predicate": {
+        "legacy_heroes:herocostumesuitcase_rendersuitcasenumber": 3
+      },
+      "model": "legacy_heroes:item/herocostumesuitcase_3"
+    },
+    {
+      "predicate": {
+        "legacy_heroes:herocostumesuitcase_rendersuitcasenumber": 4
+      },
+      "model": "legacy_heroes:item/herocostumesuitcase_4"
+    },
+    {
+      "predicate": {
+        "legacy_heroes:herocostumesuitcase_rendersuitcasenumber": 5
+      },
+      "model": "legacy_heroes:item/herocostumesuitcase_5"
+    }
+  ]
+}

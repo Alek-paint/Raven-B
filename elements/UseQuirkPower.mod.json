@@ -1,0 +1,9 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "R",
+    "keyBindingName": "Use Selected Quirk Attack",
+    "keyBindingCategoryKey": "quirks"
+  }
+}

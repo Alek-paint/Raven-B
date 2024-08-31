@@ -1,0 +1,7 @@
+{
+  "parent": "legacy_heroes:custom/hero_costume_suitcase",
+  "textures": {
+    "0": "legacy_heroes:block/hero_costume_suitcase",
+    "particle": "legacy_heroes:item/hero_costume_suitcase"
+  }
+}

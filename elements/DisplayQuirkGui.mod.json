@@ -1,0 +1,7 @@
+{
+  "_fv": 66,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable type=\"Number\" id=\"fireHeight\">fireHeight</variable></variables><block type=\"event_trigger\" deletable=\"false\" x=\"314\" y=\"536\"><field name=\"trigger\">player_ticks</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"text_binary_ops\"><value name=\"A\"><block type=\"variables_get_string\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" is_player_var=\"true\" has_entity=\"true\"></mutation><field name=\"VAR\">global:quirk</field><value name=\"entity\"><block type=\"entity_from_deps\"></block></value></block></value><value name=\"B\"><block type=\"text\"><field name=\"TEXT\">quirkless</field></block></value></block></value><statement name=\"DO0\"><block type=\"return_logic\"><value name=\"return\"><block type=\"logic_boolean\"><field name=\"BOOL\">FALSE</field></block></value></block></statement><next><block type=\"return_logic\"><value name=\"return\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></next></block></next></block></xml>"
+  }
+}

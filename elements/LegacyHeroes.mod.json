@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Legacy Heroes",
+    "icon": {
+      "value": "CUSTOM:Herocostumesuitcase"
+    },
+    "showSearch": true
+  }
+}

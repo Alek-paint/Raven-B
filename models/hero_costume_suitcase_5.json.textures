@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "hero_costume_suitcase_5"
+      },
+      "name": "default"
+    }
+  }
+}

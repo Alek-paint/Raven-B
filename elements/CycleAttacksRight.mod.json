@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "RIGHT",
+    "keyBindingName": "Attack Cycle Right",
+    "keyBindingCategoryKey": "quirks",
+    "onKeyPressed": {
+      "name": "CycleAttacksRightOnKeyPressed"
+    }
+  }
+}

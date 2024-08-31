@@ -1,0 +1,11 @@
+{
+  "gui.legacy_heroes.quirk_overlay.label_100": "100",
+  "key.categories.quirks": "Quirks",
+  "gui.legacy_heroes.quirk_overlay.label_11": "11",
+  "key.legacy_heroes.cycle_attacks_left": "Attack Cycle Left",
+  "item.legacy_heroes.herocostumesuitcase": "Hero Costume Suitcase",
+  "item_group.legacy_heroes.legacy_heroes": "Legacy Heroes",
+  "key.legacy_heroes.use_quirk_power": "Use Selected Quirk Attack",
+  "gui.legacy_heroes.quirk_overlay.label_empty": "%",
+  "key.legacy_heroes.cycle_attacks_right": "Attack Cycle Right"
+}

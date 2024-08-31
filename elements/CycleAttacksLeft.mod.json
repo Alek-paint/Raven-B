@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "LEFT",
+    "keyBindingName": "Attack Cycle Left",
+    "keyBindingCategoryKey": "quirks",
+    "onKeyPressed": {
+      "name": "CycleAttacksLeftOnKeyPressed"
+    }
+  }
+}
