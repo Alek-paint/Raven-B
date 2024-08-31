@@ -1,6 +1,7 @@
 {
   "gui.legacy_heroes.quirk_overlay.label_100": "100",
   "key.categories.quirks": "Quirks",
+  "gui.legacy_heroes.quirk_overlay.label_empty1": "",
   "gui.legacy_heroes.quirk_overlay.label_11": "11",
   "key.legacy_heroes.cycle_attacks_left": "Attack Cycle Left",
   "item.legacy_heroes.herocostumesuitcase": "Hero Costume Suitcase",

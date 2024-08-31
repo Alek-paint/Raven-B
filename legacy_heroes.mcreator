@@ -31,7 +31,7 @@
           }
         ]
       },
-      "path": "~/Quirks/Invisibility"
+      "path": "~/Quirks/Invisibility/Overlay"
     },
     {
       "name": "AddInvisibilityQuirk",
@@ -491,7 +491,7 @@
           }
         ]
       },
-      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+      "path": "~/Quirks/Quirk Overlay/Quirk Selection"
     },
     {
       "name": "CycleAttacksRightOnKeyPressed",
@@ -510,7 +510,7 @@
           }
         ]
       },
-      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+      "path": "~/Quirks/Quirk Overlay/Quirk Selection"
     },
     {
       "name": "DisplaySelectedAttackSlot1",
@@ -530,7 +530,7 @@
           }
         ]
       },
-      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+      "path": "~/Quirks/Quirk Overlay/Quirk Selection"
     },
     {
       "name": "DisplaySelectedAttackSlot2",
@@ -550,7 +550,7 @@
           }
         ]
       },
-      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+      "path": "~/Quirks/Quirk Overlay/Quirk Selection"
     },
     {
       "name": "DisplaySelectedAttackSlot3",
@@ -570,7 +570,7 @@
           }
         ]
       },
-      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+      "path": "~/Quirks/Quirk Overlay/Quirk Selection"
     },
     {
       "name": "DisplaySelectedAttackSlot4",
@@ -590,7 +590,7 @@
           }
         ]
       },
-      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+      "path": "~/Quirks/Quirk Overlay/Quirk Selection"
     },
     {
       "name": "DisplaySelectedAttackSlot5",
@@ -610,7 +610,7 @@
           }
         ]
       },
-      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+      "path": "~/Quirks/Quirk Overlay/Quirk Selection"
     },
     {
       "name": "LoopSelectedRotor",
@@ -629,7 +629,212 @@
           }
         ]
       },
-      "path": "~/Quirks/Quirk Overlay/QuirkSelection"
+      "path": "~/Quirks/Quirk Overlay/Quirk Selection"
+    },
+    {
+      "name": "QuirkCooldownLocalTimer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_local_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldownLocalTimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown"
+    },
+    {
+      "name": "QuirkCooldownRegeneration",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_cooldown_regeneration",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkCooldownRegenerationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay/Quirk Cooldown"
+    },
+    {
+      "name": "AttackNameDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attack_name_display",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/AttackNameDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay"
+    },
+    {
+      "name": "InvisibilityMoveSets",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisibility_move_sets",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/InvisibilityMoveSetsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Invisibility/Movesets"
+    },
+    {
+      "name": "UseQuirkPowerOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "use_quirk_power_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/UseQuirkPowerOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Quirk Overlay"
+    },
+    {
+      "name": "InvisibilityMoveSetsNames",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "invisibility_move_sets_names",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/InvisibilityMoveSetsNamesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Invisibility/Movesets"
+    },
+    {
+      "name": "PhantomFlash",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "phantom_flash",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/PhantomFlashProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Invisibility/Attacks"
+    },
+    {
+      "name": "LightRefraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_refraction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/LightRefractionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Invisibility/Attacks"
     }
   ],
   "variable_elements": [
@@ -666,11 +871,17 @@
     {
       "name": "quirk_attack_selected",
       "type": "string",
-      "scope": "map",
-      "value": "\"\""
+      "scope": "player_persistent",
+      "value": ""
     },
     {
       "name": "Player_ID",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "quirk_cooldown_timer",
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
@@ -683,6 +894,7 @@
     "en_us": {
       "gui.legacy_heroes.quirk_overlay.label_100": "100",
       "key.categories.quirks": "Quirks",
+      "gui.legacy_heroes.quirk_overlay.label_empty1": "",
       "gui.legacy_heroes.quirk_overlay.label_11": "11",
       "key.legacy_heroes.cycle_attacks_left": "Attack Cycle Left",
       "item.legacy_heroes.herocostumesuitcase": "Hero Costume Suitcase",
@@ -700,7 +912,20 @@
         "children": [
           {
             "name": "Invisibility",
-            "children": []
+            "children": [
+              {
+                "name": "Overlay",
+                "children": []
+              },
+              {
+                "name": "Movesets",
+                "children": []
+              },
+              {
+                "name": "Attacks",
+                "children": []
+              }
+            ]
           },
           {
             "name": "Quirk Overlay",
@@ -715,7 +940,7 @@
                 ]
               },
               {
-                "name": "QuirkSelection",
+                "name": "Quirk Selection",
                 "children": []
               }
             ]

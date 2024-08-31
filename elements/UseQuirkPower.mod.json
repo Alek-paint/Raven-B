@@ -4,6 +4,9 @@
   "definition": {
     "triggerKey": "R",
     "keyBindingName": "Use Selected Quirk Attack",
-    "keyBindingCategoryKey": "quirks"
+    "keyBindingCategoryKey": "quirks",
+    "onKeyPressed": {
+      "name": "UseQuirkPowerOnKeyPressed"
+    }
   }
 }

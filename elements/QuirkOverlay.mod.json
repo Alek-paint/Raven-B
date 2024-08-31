@@ -26,7 +26,7 @@
             "falpha": 0.0
           },
           "anchorPoint": "TOP_LEFT",
-          "x": 185,
+          "x": 183,
           "y": 2
         }
       },
@@ -377,6 +377,23 @@
           "anchorPoint": "TOP_LEFT",
           "x": 64,
           "y": 24
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_empty1",
+          "text": {
+            "fixedValue": "",
+            "name": "AttackNameDisplay"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 5,
+          "y": 49
         }
       }
     ],

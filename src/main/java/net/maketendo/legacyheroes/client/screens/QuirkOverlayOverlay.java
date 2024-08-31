@@ -33,6 +33,7 @@ import net.maketendo.legacyheroes.procedures.DisplaySelectedAttackSlot3Procedure
 import net.maketendo.legacyheroes.procedures.DisplaySelectedAttackSlot2Procedure;
 import net.maketendo.legacyheroes.procedures.DisplaySelectedAttackSlot1Procedure;
 import net.maketendo.legacyheroes.procedures.DisplayQuirkGuiProcedure;
+import net.maketendo.legacyheroes.procedures.AttackNameDisplayProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
@@ -134,9 +135,12 @@ public class QuirkOverlayOverlay {
 			if (InvisibilityOverlayDisplayProcedure.execute(entity)) {
 				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/invisible_entity_attack.png"), 64, 24, 0, 0, 16, 16, 16, 16);
 			}
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.legacy_heroes.quirk_overlay.label_11"), 185, 2, -13382656, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.legacy_heroes.quirk_overlay.label_11"), 183, 2, -13382656, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.legacy_heroes.quirk_overlay.label_100"), 186, 12, -13369600, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.legacy_heroes.quirk_overlay.label_empty"), 204, 12, -13369600, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
+
+					AttackNameDisplayProcedure.execute(entity), 5, 49, -1, false);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();
