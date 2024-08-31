@@ -835,6 +835,25 @@
         ]
       },
       "path": "~/Quirks/Invisibility/Attacks"
+    },
+    {
+      "name": "QuirkTickingProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quirk_ticking_procedure",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/QuirkTickingProcedureProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks"
     }
   ],
   "variable_elements": [
