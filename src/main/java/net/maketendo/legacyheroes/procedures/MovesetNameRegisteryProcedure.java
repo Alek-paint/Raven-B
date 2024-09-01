@@ -12,7 +12,7 @@ import net.maketendo.legacyheroes.network.LegacyHeroesModVariables;
 import javax.annotation.Nullable;
 
 @Mod.EventBusSubscriber
-public class InvisibilityMoveSetsNamesProcedure {
+public class MovesetNameRegisteryProcedure {
 	@SubscribeEvent
 	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
 		if (event.phase == TickEvent.Phase.END) {

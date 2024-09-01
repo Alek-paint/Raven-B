@@ -7,32 +7,6 @@
       {
         "type": "image",
         "data": {
-          "image": "quirk_exp_bar.png",
-          "use1Xscale": false,
-          "anchorPoint": "TOP_LEFT",
-          "x": 3,
-          "y": 3
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_11",
-          "text": {
-            "fixedValue": "11"
-          },
-          "color": {
-            "value": -13382656,
-            "falpha": 0.0
-          },
-          "anchorPoint": "TOP_LEFT",
-          "x": 183,
-          "y": 2
-        }
-      },
-      {
-        "type": "image",
-        "data": {
           "image": "energy_bar.png",
           "use1Xscale": false,
           "anchorPoint": "CENTER",
@@ -203,7 +177,7 @@
           "use1Xscale": false,
           "anchorPoint": "TOP_LEFT",
           "x": 3,
-          "y": 13
+          "y": 2
         }
       },
       {
@@ -219,7 +193,7 @@
           },
           "anchorPoint": "TOP_LEFT",
           "x": 186,
-          "y": 12
+          "y": 2
         }
       },
       {
@@ -235,7 +209,7 @@
           },
           "anchorPoint": "TOP_LEFT",
           "x": 204,
-          "y": 12
+          "y": 2
         }
       },
       {
@@ -244,8 +218,8 @@
           "image": "quirk_display_background.png",
           "use1Xscale": false,
           "anchorPoint": "TOP_LEFT",
-          "x": 3,
-          "y": 18
+          "x": 1,
+          "y": 6
         }
       },
       {
@@ -257,8 +231,8 @@
             "name": "InvisibilityOverlayDisplay"
           },
           "anchorPoint": "TOP_LEFT",
-          "x": 10,
-          "y": 25
+          "x": 8,
+          "y": 13
         }
       },
       {
@@ -267,8 +241,8 @@
           "image": "quirk_power_display_background.png",
           "use1Xscale": false,
           "anchorPoint": "TOP_LEFT",
-          "x": 31,
-          "y": 16
+          "x": 28,
+          "y": 4
         }
       },
       {
@@ -277,8 +251,8 @@
           "image": "quirk_power_display_background.png",
           "use1Xscale": false,
           "anchorPoint": "TOP_LEFT",
-          "x": 56,
-          "y": 16
+          "x": 53,
+          "y": 4
         }
       },
       {
@@ -287,8 +261,8 @@
           "image": "quirk_power_display_background.png",
           "use1Xscale": false,
           "anchorPoint": "TOP_LEFT",
-          "x": 81,
-          "y": 16
+          "x": 78,
+          "y": 4
         }
       },
       {
@@ -297,86 +271,34 @@
           "image": "quirk_power_display_background.png",
           "use1Xscale": false,
           "anchorPoint": "TOP_LEFT",
-          "x": 106,
-          "y": 16
+          "x": 103,
+          "y": 4
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "selection_quirk_power_display.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplaySelectedAttackSlot1"
-          },
-          "anchorPoint": "TOP_LEFT",
-          "x": 36,
-          "y": 45
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "selection_quirk_power_display.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "DisplaySelectedAttackSlot2"
-          },
-          "anchorPoint": "TOP_LEFT",
-          "x": 61,
-          "y": 45
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "selection_quirk_power_display.png",
+          "image": "quirk_power_display_background_selected.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "DisplaySelectedAttackSlot3"
           },
           "anchorPoint": "TOP_LEFT",
-          "x": 86,
-          "y": 45
+          "x": 78,
+          "y": 4
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "selection_quirk_power_display.png",
+          "image": "quirk_power_display_background_selected.png",
           "use1Xscale": false,
           "displayCondition": {
             "name": "DisplaySelectedAttackSlot4"
           },
           "anchorPoint": "TOP_LEFT",
-          "x": 111,
-          "y": 45
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "blindness_attack.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "InvisibilityOverlayDisplay"
-          },
-          "anchorPoint": "TOP_LEFT",
-          "x": 39,
-          "y": 24
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "invisible_entity_attack.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "InvisibilityOverlayDisplay"
-          },
-          "anchorPoint": "TOP_LEFT",
-          "x": 64,
-          "y": 24
+          "x": 103,
+          "y": 4
         }
       },
       {
@@ -392,8 +314,60 @@
             "falpha": 0.0
           },
           "anchorPoint": "TOP_LEFT",
-          "x": 5,
-          "y": 49
+          "x": 3,
+          "y": 36
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quirk_power_display_background_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplaySelectedAttackSlot1"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 28,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "quirk_power_display_background_selected.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "DisplaySelectedAttackSlot2"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 53,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "blindness_attack.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InvisibilityOverlayDisplay"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 36,
+          "y": 12
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "invisible_entity_attack.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InvisibilityOverlayDisplay"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 61,
+          "y": 12
         }
       }
     ],

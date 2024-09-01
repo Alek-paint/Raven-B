@@ -62,8 +62,6 @@ public class QuirkOverlayOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (DisplayQuirkGuiProcedure.execute(entity)) {
-			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_exp_bar.png"), 3, 3, 0, 0, 182, 5, 182, 5);
-
 			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/energy_bar.png"), w / 2 + 7, h / 2 + -6, 0, 0, 4, 13, 4, 13);
 
 			if (QuirkCooldown1Procedure.execute(entity)) {
@@ -102,45 +100,44 @@ public class QuirkOverlayOverlay {
 			if (QuirkCooldown0Procedure.execute(entity)) {
 				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/unable_icon.png"), w / 2 + 5, h / 2 + -3, 0, 0, 8, 7, 8, 7);
 			}
-			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_percentage_barr.png"), 3, 13, 0, 0, 182, 5, 182, 5);
+			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_percentage_barr.png"), 3, 2, 0, 0, 182, 5, 182, 5);
 
-			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_display_background.png"), 3, 18, 0, 0, 32, 32, 32, 32);
+			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_display_background.png"), 1, 6, 0, 0, 32, 32, 32, 32);
 
 			if (InvisibilityOverlayDisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/invisibility_quirk_icon.png"), 10, 25, 0, 0, 18, 18, 18, 18);
+				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/invisibility_quirk_icon.png"), 8, 13, 0, 0, 18, 18, 18, 18);
 			}
-			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background.png"), 31, 16, 0, 0, 32, 32, 32, 32);
+			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background.png"), 28, 4, 0, 0, 32, 32, 32, 32);
 
-			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background.png"), 56, 16, 0, 0, 32, 32, 32, 32);
+			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background.png"), 53, 4, 0, 0, 32, 32, 32, 32);
 
-			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background.png"), 81, 16, 0, 0, 32, 32, 32, 32);
+			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background.png"), 78, 4, 0, 0, 32, 32, 32, 32);
 
-			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background.png"), 106, 16, 0, 0, 32, 32, 32, 32);
+			event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background.png"), 103, 4, 0, 0, 32, 32, 32, 32);
 
-			if (DisplaySelectedAttackSlot1Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/selection_quirk_power_display.png"), 36, 45, 0, 0, 22, 1, 22, 1);
-			}
-			if (DisplaySelectedAttackSlot2Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/selection_quirk_power_display.png"), 61, 45, 0, 0, 22, 1, 22, 1);
-			}
 			if (DisplaySelectedAttackSlot3Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/selection_quirk_power_display.png"), 86, 45, 0, 0, 22, 1, 22, 1);
+				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background_selected.png"), 78, 4, 0, 0, 32, 32, 32, 32);
 			}
 			if (DisplaySelectedAttackSlot4Procedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/selection_quirk_power_display.png"), 111, 45, 0, 0, 22, 1, 22, 1);
+				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background_selected.png"), 103, 4, 0, 0, 32, 32, 32, 32);
+			}
+			if (DisplaySelectedAttackSlot1Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background_selected.png"), 28, 4, 0, 0, 32, 32, 32, 32);
+			}
+			if (DisplaySelectedAttackSlot2Procedure.execute(entity)) {
+				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/quirk_power_display_background_selected.png"), 53, 4, 0, 0, 32, 32, 32, 32);
 			}
 			if (InvisibilityOverlayDisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/blindness_attack.png"), 39, 24, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/blindness_attack.png"), 36, 12, 0, 0, 16, 16, 16, 16);
 			}
 			if (InvisibilityOverlayDisplayProcedure.execute(entity)) {
-				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/invisible_entity_attack.png"), 64, 24, 0, 0, 16, 16, 16, 16);
+				event.getGuiGraphics().blit(new ResourceLocation("legacy_heroes:textures/screens/invisible_entity_attack.png"), 61, 12, 0, 0, 16, 16, 16, 16);
 			}
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.legacy_heroes.quirk_overlay.label_11"), 183, 2, -13382656, false);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.legacy_heroes.quirk_overlay.label_100"), 186, 12, -13369600, false);
-			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.legacy_heroes.quirk_overlay.label_empty"), 204, 12, -13369600, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.legacy_heroes.quirk_overlay.label_100"), 186, 2, -13369600, false);
+			event.getGuiGraphics().drawString(Minecraft.getInstance().font, Component.translatable("gui.legacy_heroes.quirk_overlay.label_empty"), 204, 2, -13369600, false);
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					AttackNameDisplayProcedure.execute(entity), 5, 49, -1, false);
+					AttackNameDisplayProcedure.execute(entity), 3, 36, -1, false);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

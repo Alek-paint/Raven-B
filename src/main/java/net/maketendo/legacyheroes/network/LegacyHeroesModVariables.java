@@ -77,7 +77,6 @@ public class LegacyHeroesModVariables {
 			PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 			clone.quirk = original.quirk;
-			clone.quirk_exp = original.quirk_exp;
 			clone.quirk_power_percentage = original.quirk_power_percentage;
 			clone.quirk_cooldown = original.quirk_cooldown;
 			clone.quirk_attack_selection_rotor = original.quirk_attack_selection_rotor;
@@ -126,7 +125,6 @@ public class LegacyHeroesModVariables {
 
 	public static class PlayerVariables {
 		public String quirk = "\"quirkless\"";
-		public double quirk_exp = 0;
 		public double quirk_power_percentage = 0;
 		public double quirk_cooldown = 0;
 		public double quirk_attack_selection_rotor = 1.0;
@@ -142,7 +140,6 @@ public class LegacyHeroesModVariables {
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("quirk", quirk);
-			nbt.putDouble("quirk_exp", quirk_exp);
 			nbt.putDouble("quirk_power_percentage", quirk_power_percentage);
 			nbt.putDouble("quirk_cooldown", quirk_cooldown);
 			nbt.putDouble("quirk_attack_selection_rotor", quirk_attack_selection_rotor);
@@ -155,7 +152,6 @@ public class LegacyHeroesModVariables {
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
 			quirk = nbt.getString("quirk");
-			quirk_exp = nbt.getDouble("quirk_exp");
 			quirk_power_percentage = nbt.getDouble("quirk_power_percentage");
 			quirk_cooldown = nbt.getDouble("quirk_cooldown");
 			quirk_attack_selection_rotor = nbt.getDouble("quirk_attack_selection_rotor");
@@ -196,7 +192,6 @@ public class LegacyHeroesModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.level().getEntity(message.target).getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
 					variables.quirk = message.data.quirk;
-					variables.quirk_exp = message.data.quirk_exp;
 					variables.quirk_power_percentage = message.data.quirk_power_percentage;
 					variables.quirk_cooldown = message.data.quirk_cooldown;
 					variables.quirk_attack_selection_rotor = message.data.quirk_attack_selection_rotor;

@@ -32,7 +32,7 @@ public class QuirkTickingProcedureProcedure {
 			return;
 		if (((entity.getCapability(LegacyHeroesModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LegacyHeroesModVariables.PlayerVariables())).quirk).equals("invisibility")) {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
-				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 60, 250, true, true));
+				_entity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, 60, 250, false, false));
 		}
 	}
 }
