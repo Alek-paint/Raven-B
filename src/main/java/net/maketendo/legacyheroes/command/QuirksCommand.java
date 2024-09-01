@@ -37,7 +37,7 @@ public class QuirksCommand {
 
 					AddInvisibilityQuirkProcedure.execute(arguments, entity);
 					return 0;
-				})).then(Commands.literal("hardening")).then(Commands.literal("hardening")).then(Commands.literal("hardening")).then(Commands.literal("hardening")).then(Commands.literal("hardening"))))
+				})).then(Commands.literal("hardening")).then(Commands.literal("zerogravity")).then(Commands.literal("hardening")).then(Commands.literal("hardening")).then(Commands.literal("hardening"))))
 				.then(Commands.literal("remove").then(Commands.argument("player", EntityArgument.player()).executes(arguments -> {
 					Level world = arguments.getSource().getUnsidedLevel();
 					double x = arguments.getSource().getPosition().x();

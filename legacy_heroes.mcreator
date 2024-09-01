@@ -854,6 +854,119 @@
         ]
       },
       "path": "~/Quirks"
+    },
+    {
+      "name": "WarpRefraction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warp_refraction",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/WarpRefractionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Powers/Invisibility/Attacks"
+    },
+    {
+      "name": "ZeroGravityOverlayDisplay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_gravity_overlay_display",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/ZeroGravityOverlayDisplayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Quirks/Powers/Zero Gravity/Overlay"
+    },
+    {
+      "name": "ZeroGravityMoveSets",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zero_gravity_move_sets",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/ZeroGravityMoveSetsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Quirks/Powers/Zero Gravity/Movesets"
+    },
+    {
+      "name": "AddZeroGravityQuirk",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "add_zero_gravity_quirk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/maketendo/legacyheroes/procedures/AddZeroGravityQuirkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Commands/Procedures"
     }
   ],
   "variable_elements": [
@@ -959,6 +1072,48 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "name": "Hardening",
+                "children": [
+                  {
+                    "name": "Overlay",
+                    "children": []
+                  },
+                  {
+                    "name": "Movesets",
+                    "children": []
+                  },
+                  {
+                    "name": "Attacks",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "Zero Gravity",
+                "children": [
+                  {
+                    "name": "Overlay",
+                    "children": []
+                  },
+                  {
+                    "name": "Movesets",
+                    "children": []
+                  },
+                  {
+                    "name": "Attacks",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "One for All",
+                "children": []
+              },
+              {
+                "name": "Half-Cold Half-Hot",
+                "children": []
               }
             ]
           }

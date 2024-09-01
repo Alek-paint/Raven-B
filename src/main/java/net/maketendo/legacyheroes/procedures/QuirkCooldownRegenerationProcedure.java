@@ -36,5 +36,14 @@ public class QuirkCooldownRegenerationProcedure {
 				});
 			}
 		}
+		if ((entity.getCapability(LegacyHeroesModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LegacyHeroesModVariables.PlayerVariables())).quirk_cooldown_timer == 100) {
+			{
+				double _setval = 100;
+				entity.getCapability(LegacyHeroesModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.quirk_cooldown = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		}
 	}
 }

@@ -315,7 +315,7 @@
           },
           "anchorPoint": "TOP_LEFT",
           "x": 3,
-          "y": 36
+          "y": 37
         }
       },
       {
@@ -368,6 +368,45 @@
           "anchorPoint": "TOP_LEFT",
           "x": 61,
           "y": 12
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skill_releace_attack_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZeroGravityOverlayDisplay"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 60,
+          "y": 11
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "levitate_attack_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZeroGravityOverlayDisplay"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 35,
+          "y": 11
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "zero_gravity_quirk_icon.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "ZeroGravityOverlayDisplay"
+          },
+          "anchorPoint": "TOP_LEFT",
+          "x": 8,
+          "y": 13
         }
       }
     ],

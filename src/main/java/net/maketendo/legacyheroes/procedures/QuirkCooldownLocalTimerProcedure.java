@@ -29,7 +29,7 @@ public class QuirkCooldownLocalTimerProcedure {
 			return;
 		if ((entity.getCapability(LegacyHeroesModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new LegacyHeroesModVariables.PlayerVariables())).quirk_cooldown_timer == 0) {
 			{
-				double _setval = 25;
+				double _setval = 100;
 				entity.getCapability(LegacyHeroesModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.quirk_cooldown_timer = _setval;
 					capability.syncPlayerVariables(entity);
